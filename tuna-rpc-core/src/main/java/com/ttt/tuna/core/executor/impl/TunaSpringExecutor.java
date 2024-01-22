@@ -21,7 +21,11 @@ public class TunaSpringExecutor extends TunaExecutor implements ApplicationConte
 
     @Override
     public void afterSingletonsInstantiated() {
-
+        try {
+            super.start();
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
     }
 
     @Override
