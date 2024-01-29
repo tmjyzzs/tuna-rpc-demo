@@ -9,5 +9,7 @@
     <file url="file://$PROJECT_DIR$/tuna-rpc-core/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tuna-rpc-executor-samples/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tuna-rpc-executor-samples/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tuna-rpc-executor-samples/tuna-rpc-executor-sample-client/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tuna-rpc-executor-samples/tuna-rpc-executor-sample-client/src/main/resources" charset="UTF-8" />
   </component>
 </project>

@@ -14,7 +14,8 @@ import java.util.List;
 *Description 初始化客户端的各种基础信息
 *DATA 2024-01-20
 *@Author ttt
-*/public class TunaExecutor {
+*/
+public class TunaExecutor {
 
     private static final Logger log = LoggerFactory.getLogger(TunaExecutor.class);
 
@@ -90,6 +91,7 @@ import java.util.List;
                         clientBizList = new ArrayList<ClientBiz>();
                     }
                     // 将 adminBiz添加到 list
+                    log.info("将adminBiz 存放到list中=====>{}",clientBiz);
                     clientBizList.add(clientBiz);
                 }
             }

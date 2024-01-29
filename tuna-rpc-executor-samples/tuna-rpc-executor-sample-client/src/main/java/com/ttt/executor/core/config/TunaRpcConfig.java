@@ -18,6 +18,9 @@ public class TunaRpcConfig {
 
     private static final Logger log = LoggerFactory.getLogger(TunaRpcConfig.class);
 
+    @Value("${tuna.rpc.admin.addresses}")
+    private String adminAddresses;
+
     @Value("${tuna.rpc.executor.address}")
     private String address;
 
@@ -33,6 +36,7 @@ public class TunaRpcConfig {
         tunaSpringExecutor.setAddress(address);
         tunaSpringExecutor.setIp(ip);
         tunaSpringExecutor.setPort(port);
+        tunaSpringExecutor.setAdminAddresses(adminAddresses);
         return tunaSpringExecutor;
     }
 }

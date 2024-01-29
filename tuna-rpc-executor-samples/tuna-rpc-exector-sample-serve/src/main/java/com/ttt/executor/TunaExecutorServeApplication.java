@@ -4,14 +4,15 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
- * Description application
- * DATA 2024-01-20
+ * Description 服务提供方
+ * DATA 2024-01-29
  *
  * @Author ttt
  */
 @SpringBootApplication
-public class TunaExecutorApplication {
+public class TunaExecutorServeApplication {
+
     public static void main(String[] args) {
-        SpringApplication.run(TunaExecutorApplication.class, args);
+        SpringApplication.run(TunaExecutorServeApplication.class, args);
     }
 }
