@@ -7,7 +7,7 @@ import java.io.InputStream;
 import java.util.Properties;
 
 /**
- * Description TODO
+ * Description 读取配置文件
  * DATA 2024-01-29
  *
  * @Author ttt
