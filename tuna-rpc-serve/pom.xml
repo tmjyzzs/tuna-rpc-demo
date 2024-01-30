@@ -9,7 +9,7 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>tuna-rpc-client</artifactId>
+    <artifactId>tuna-rpc-serve</artifactId>
 
     <dependencies>
         <!-- starter-web：spring-webmvc + autoconfigure + logback + yaml + tomcat -->
@@ -31,7 +31,7 @@
         <dependency>
             <groupId>com.ttt</groupId>
             <artifactId>tuna-rpc-core</artifactId>
-<!--            <version>${project.parent.version}</version>-->
+            <version>${project.parent.version}</version>
         </dependency>
 
 

@@ -1,4 +1,4 @@
-package com.ttt.tuna.core.client.core.model;
+package com.ttt.tuna.core.serve.core.model;
 
 import java.util.Date;
 

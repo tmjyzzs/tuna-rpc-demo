@@ -1,6 +1,6 @@
-package com.ttt.tuna.core.client.core.config;
+package com.ttt.tuna.core.serve.core.config;
 
-import com.ttt.tuna.core.client.core.scheduler.TunaScheduler;
+import com.ttt.tuna.core.serve.core.scheduler.TunaScheduler;
 import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.stereotype.Component;
@@ -15,11 +15,12 @@ import org.springframework.stereotype.Component;
 public class TunaClientConfig implements InitializingBean, DisposableBean {
 
 
-    private TunaScheduler  tunaScheduler;
+    private TunaScheduler tunaScheduler;
 
     @Override
     public void afterPropertiesSet() throws Exception {
         tunaScheduler = new TunaScheduler();
+        tunaScheduler.init();
 
     }
     @Override

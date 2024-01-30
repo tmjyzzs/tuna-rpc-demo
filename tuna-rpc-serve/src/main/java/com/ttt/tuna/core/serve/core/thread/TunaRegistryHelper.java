@@ -1,8 +1,8 @@
-package com.ttt.tuna.core.client.core.thread;
+package com.ttt.tuna.core.serve.core.thread;
 
 
-import com.ttt.tuna.core.client.core.model.TunaRegistry;
-import com.ttt.tuna.core.client.core.storage.RegistryStorage;
+import com.ttt.tuna.core.serve.core.model.TunaRegistry;
+import com.ttt.tuna.core.serve.core.storage.RegistryStorage;
 import com.ttt.tuna.core.model.RegistryParam;
 import com.ttt.tuna.core.model.ReturnT;
 import org.slf4j.Logger;
@@ -46,14 +46,14 @@ public class TunaRegistryHelper {
                 new ThreadFactory() {
                     @Override
                     public Thread newThread(Runnable r) {
-                        return new Thread(r, "xxl-job, admin JobRegistryMonitorHelper-registryOrRemoveThreadPool-" + r.hashCode());
+                        return new Thread(r, "tuna, admin JobRegistryMonitorHelper-registryOrRemoveThreadPool-" + r.hashCode());
                     }
                 },
                 new RejectedExecutionHandler() {
                     @Override
                     public void rejectedExecution(Runnable r, ThreadPoolExecutor executor) {
                         r.run();
-                        log.warn(">>>>>>>>>>> xxl-job, registry or remove too fast, match threadpool rejected handler(run now).");
+                        log.warn(">>>>>>>>>>> tuna, registry or remove too fast, match threadpool rejected handler(run now).");
                     }
                 });
 
@@ -62,11 +62,11 @@ public class TunaRegistryHelper {
             @Override
             public void run() {
 
-                log.info(">>>>>>>>>>> xxl-job, job registry monitor thread stop");
+                log.info(">>>>>>>>>>> tuna, job registry monitor thread stop");
             }
         });
         registryMonitorThread.setDaemon(true);
-        registryMonitorThread.setName("xxl-job, admin JobRegistryMonitorHelper-registryMonitorThread");
+        registryMonitorThread.setName("tuna, admin JobRegistryMonitorHelper-registryMonitorThread");
         registryMonitorThread.start();
     }
 

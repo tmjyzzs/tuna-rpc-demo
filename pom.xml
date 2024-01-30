@@ -10,7 +10,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>tuna-rpc-core</module>
-        <module>tuna-rpc-client</module>
+        <module>tuna-rpc-serve</module>
         <module>tuna-rpc-executor-samples</module>
         <module>tuna-rpc-executor-samples/tuna-rpc-exector-sample-serve</module>
     </modules>
